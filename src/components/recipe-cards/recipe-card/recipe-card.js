@@ -6,16 +6,16 @@ import Button from 'react-bootstrap/Button';
 
 const recipeCard = props => (
   <Card style={{ width: "18rem" }}>
-    <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+    <Card.Img variant="top" src={props.imgSrc} />
     <Card.Body>
-      <Card.Title>label</Card.Title>
+      <Card.Title>{props.label}</Card.Title>
       <Card.Text>
-        source
+        {props.source}
       </Card.Text>
     </Card.Body>
     <ListGroup className="list-group-flush">
-      <ListGroupItem><span className="text-success">100</span> calories</ListGroupItem>
-      <ListGroupItem><span className="text-success">2</span> ingredientsLength</ListGroupItem>
+      <ListGroupItem><span className="text-success">{props.calories.toFixed(2)}</span> calories</ListGroupItem>
+      <ListGroupItem><span className="text-success">{props.ingredientsLength}</span> ingredients</ListGroupItem>
     </ListGroup>
     <Card.Body>
       <Button variant="primary">Go somewhere</Button>
