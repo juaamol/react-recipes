@@ -4,5 +4,21 @@
 }
 
 .spinner-container {
-    margin-top: 64px
+  margin-top: 64px;
+}
+
+@media (max-width: 575px) {
+  .mt-sm-2 {
+    margin-top: 0.5rem !important;
+  }
+
+  .w-sm-100 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+  .mt-sm-2 {
+    margin-top: 0 !important;
+  }
 }

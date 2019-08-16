@@ -47,7 +47,7 @@ const Search = props => {
 
   return (
     <React.Fragment>
-      <Form inline className="justify-content-center mt-sm-2">
+      <Form inline className="justify-content-center mt-2">
         <FormControl
           type="text"
           placeholder="Search"
@@ -55,7 +55,7 @@ const Search = props => {
           value={queryState.query}
           onChange={handleQuery}
           onKeyPress={handleQuery} />
-        <Button variant="outline-success" onClick={handleSearchButton}>Search</Button>
+        <Button className="mt-sm-2 w-sm-100" variant="outline-success" onClick={handleSearchButton}>Search</Button>
       </Form>
 
       <div className="d-flex justify-content-center">
