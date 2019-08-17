@@ -1,8 +1,9 @@
 import React from 'react';
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Search from '../../pages/search/search';
+import RecipeCardDetail from '../recipe-cards/recipe-card-detail/recipe-card-detail';
 import Home from '../../pages/home/home';
 import Logo from '../../assets/salad-bowl-3.png';
 
@@ -25,8 +26,11 @@ const navbar = (props) => (
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
-        <Route path="/" exact component={Home} />
-        <Route path="/search/" component={Search} />
+        <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/search/" component={Search} />
+            <Route path="/:id" exact component={RecipeCardDetail} />
+        </Switch>
     </Router>
 );
 

@@ -27,8 +27,6 @@ const Search = props => {
           setLoadState({ loading: false, loaded: false, error: err });
         }
       }
-
-      console.log('inside fetch data');
     }
     fetchData();
   }, [loadState.loading, queryState.query]);
