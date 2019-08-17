@@ -42,9 +42,9 @@ const RecipeCardDetail = props => {
   return (
     <div>
       {recipeState.recipe ? (
-        <Container className='bg-light pl-5 pr-5 mt-5 pt-5 pb-5'>
+        <Container className='bg-black-7 pl-5 pr-5 mt-5 mb-5 pt-5 pb-5'>
           <Row className='justify-content-md-center'>
-            <h2 className='text-center'>{recipeState.recipe.label}</h2>
+            <h2 className='text-center text-light'>{recipeState.recipe.label}</h2>
           </Row>
           <Row className='mt-4'>
             <Col>
