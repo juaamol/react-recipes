@@ -9,7 +9,7 @@ import Row from "react-bootstrap/Row";
 const recipeCards = props => {
 
   const recipeSelectHandler = (id) => {
-    props.history.push({pathname: '/' + id})
+    props.history.push({pathname: `${props.match.path}${id}`})
   }
 
   const recipeCards = props.recipes.map(recipe => (

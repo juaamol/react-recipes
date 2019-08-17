@@ -5,7 +5,7 @@ import FormControl from "react-bootstrap/FormControl";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Spinner from "react-bootstrap/Spinner";
-import './search.css';
+import Jumbotron from "react-bootstrap/Jumbotron";
 
 const Search = props => {
   const [recipesState, setRecipesState] = useState({ recipes: [], });
@@ -45,16 +45,19 @@ const Search = props => {
 
   return (
     <React.Fragment>
-      <Form inline className="justify-content-center mt-2">
-        <FormControl
-          type="text"
-          placeholder="Search"
-          className="mr-sm-2"
-          value={queryState.query}
-          onChange={handleQuery}
-          onKeyPress={handleQuery} />
-        <Button className="mt-sm-2 w-sm-100" variant="outline-success" onClick={handleSearchButton}>Search</Button>
-      </Form>
+      <Jumbotron>
+        <h2 className="text-center">What would you like to eat?</h2>
+        <Form inline className="justify-content-center mt-5">
+          <FormControl
+            type="text"
+            placeholder="Search"
+            className="mr-sm-2"
+            value={queryState.query}
+            onChange={handleQuery}
+            onKeyPress={handleQuery} />
+          <Button className="mt-sm-2 w-sm-100" variant="outline-success" onClick={handleSearchButton}>Search</Button>
+        </Form>
+      </Jumbotron>
 
       <div className="d-flex justify-content-center">
         {loadState.loading ?

@@ -28,8 +28,8 @@ const navbar = (props) => (
         </Navbar>
         <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/search/" component={Search} />
-            <Route path="/:id" exact component={RecipeCardDetail} />
+            <Route path="/search/" exact component={Search} />
+            <Route path="/search/:id" exact component={RecipeCardDetail} />
         </Switch>
     </Router>
 );
