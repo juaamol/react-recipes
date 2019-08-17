@@ -52,7 +52,7 @@ const RecipeCardDetail = props => {
                 <img src={recipeState.recipe.image} alt='tasty food' />
               </Row>
               <Row className='justify-content-center '>
-                <ListGroup className='miw-300px'>
+                <ListGroup className='w-300px mah-500px scrolly-auto'>
                   {recipeState.recipe.ingredientLines.map(ing => (
                     <ListGroup.Item key={ing}>{ing}</ListGroup.Item>
                   ))}
@@ -60,7 +60,7 @@ const RecipeCardDetail = props => {
               </Row>
               <Row className='justify-content-center mt-3'>
                 <a
-                  className='btn btn-primary miw-300px'
+                  className='btn btn-primary w-300px'
                   href={recipeState.recipe.url}
                 >
                   {recipeState.recipe.source}
