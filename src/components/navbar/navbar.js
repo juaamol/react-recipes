@@ -9,14 +9,15 @@ import Logo from '../../assets/salad-bowl-3.png';
 
 const navbar = (props) => (
     <Router>
-        <Navbar bg="light" expand="lg">
-            <Navbar.Brand><img
-                src={Logo}
-                width="30"
-                height="30"
-                className="d-inline-block align-top"
-                alt="Salad bowl logo"
-            /></Navbar.Brand>
+        <Navbar bg="dark" expand="lg" variant="dark">
+            <Navbar.Brand>
+                <img
+                    src={Logo}
+                    width="30"
+                    height="30"
+                    className="d-inline-block align-top"
+                    alt="Salad bowl logo"
+                /></Navbar.Brand>
 
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">

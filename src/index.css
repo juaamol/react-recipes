@@ -22,13 +22,37 @@ code {
   display: flex;
 }
 
+.bg-black-7 {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 @media (max-width: 575px) {
+  .mt-sm-2 {
+    margin-top: 0.5rem !important;
+  }
+
   .mt-sm-6 {
     margin-top: 3rem !important;
   }
 
   .w-sm-100 {
     width: 100%;
+  }
+
+  .d-sm-flex {
+    display: flex !important;
+  }
+
+  .justify-content-sm-center {
+    justify-content: center !important;
+  }
+
+  .order-sm-1 {
+    order: 1;
+  }
+
+  .hide-sm {
+    display: none;
   }
 }
 
@@ -39,5 +63,15 @@ code {
 
   .mt-sm-6 {
     margin-top: 0rem !important;
+  }
+
+  .order-sm-1 {
+    order: 0;
+  }
+}
+
+@media (max-width: 990px) {
+  .hide-sm {
+    display: none;
   }
 }
