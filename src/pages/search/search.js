@@ -45,7 +45,7 @@ const Search = props => {
 
   return (
     <React.Fragment>
-      <Jumbotron className="bg-black-7">
+      <Jumbotron className="bg-black-7 rounded-0">
         <h2 className="text-center text-white">What would you like to eat?</h2>
         <Form inline className="justify-content-center mt-5">
           <FormControl
