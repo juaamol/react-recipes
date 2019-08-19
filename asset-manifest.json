@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/react-recipes/static/css/main.abb197f9.chunk.css",
+    "main.js": "/react-recipes/static/js/main.31c3ebae.chunk.js",
+    "main.js.map": "/react-recipes/static/js/main.31c3ebae.chunk.js.map",
+    "runtime~main.js": "/react-recipes/static/js/runtime~main.ec7dcf41.js",
+    "runtime~main.js.map": "/react-recipes/static/js/runtime~main.ec7dcf41.js.map",
+    "static/js/2.8fbd2f23.chunk.js": "/react-recipes/static/js/2.8fbd2f23.chunk.js",
+    "static/js/2.8fbd2f23.chunk.js.map": "/react-recipes/static/js/2.8fbd2f23.chunk.js.map",
+    "index.html": "/react-recipes/index.html",
+    "precache-manifest.9bce7b7a2a674f7faad918241c4e18fe.js": "/react-recipes/precache-manifest.9bce7b7a2a674f7faad918241c4e18fe.js",
+    "service-worker.js": "/react-recipes/service-worker.js",
+    "static/css/main.abb197f9.chunk.css.map": "/react-recipes/static/css/main.abb197f9.chunk.css.map",
+    "static/media/dessert.jpg": "/react-recipes/static/media/dessert.538e82e2.jpg",
+    "static/media/salad-bowl-3.png": "/react-recipes/static/media/salad-bowl-3.54c35b08.png",
+    "static/media/salad.jpg": "/react-recipes/static/media/salad.21974392.jpg",
+    "static/media/sea-food.jpg": "/react-recipes/static/media/sea-food.fd4aeef5.jpg",
+    "static/media/table.jpg": "/react-recipes/static/media/table.fe133716.jpg"
+  }
+}
