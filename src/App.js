@@ -8,16 +8,16 @@ import Background from './hoc/background';
 function App() {
   return (
     <Background>
-    <div className="App">
-      <header className="App-header">
-        <Navbar></Navbar>
-      </header>
-      <footer>
-        <Footer></Footer>
-      </footer>
-    </div>
-  </Background>
-    
+      <div className="App">
+        <header className="App-header">
+          <Navbar></Navbar>
+        </header>
+        <footer>
+          <Footer></Footer>
+        </footer>
+      </div>
+    </Background>
+
   );
 }
 

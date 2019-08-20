@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar';
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Switch, Redirect } from "react-router-dom";
 import Search from '../../pages/search/search';
 import RecipeCardDetail from '../recipe-cards/recipe-card-detail/recipe-card-detail';
 import Home from '../../pages/home/home';
@@ -22,15 +22,16 @@ const navbar = (props) => (
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
-                    <Nav.Link as={Link} to="/">Home</Nav.Link>
-                    <Nav.Link as={Link} to="/search">Search</Nav.Link>
+                    <Nav.Link as={Link} to="/react-recipes">Home</Nav.Link>
+                    <Nav.Link as={Link} to="/react-recipes/search">Search</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
+        <Redirect from="/" to="/react-recipes" />
         <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/search/" exact component={Search} />
-            <Route path="/search/:id" exact component={RecipeCardDetail} />
+            <Route path="/react-recipes" exact component={Home} />
+            <Route path="/react-recipes/search/" exact component={Search} />
+            <Route path="/react-recipes/search/:id" exact component={RecipeCardDetail} />
         </Switch>
     </Router>
 );
