@@ -4,9 +4,9 @@ This is a sample project that uses react to make a website that allows the user 
 
 ## How it looks like
 
-If you want to see how this app works without having to install it, go to the [https://github.com/juaamol/react-recipes/wiki](Wiki) or check this [https://juaamol.github.io/react-recipes](Live demo).
+If you want to see how this app works without having to install it, go to the [Wiki](https://github.com/juaamol/react-recipes/wiki) or check this [Live demo](https://juaamol.github.io/react-recipes).
 
-## Technologies used
+## Technologies
 
 * _react_
 * _react bootstrap_: Styling.
