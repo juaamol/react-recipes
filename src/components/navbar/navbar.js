@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar';
-import { BrowserRouter as Router, Route, Link, Switch, Redirect } from "react-router-dom";
+import { HashRouter as Router, Route, Link, Switch, Redirect } from "react-router-dom";
 import Search from '../../pages/search/search';
 import RecipeCardDetail from '../recipe-cards/recipe-card-detail/recipe-card-detail';
 import Home from '../../pages/home/home';
@@ -9,7 +9,7 @@ import Logo from '../../assets/salad-bowl-3.png';
 
 const navbar = (props) => (
     <Router>
-        <Navbar bg="dark" expand="lg" variant="dark">
+        <Navbar bg="dark sticky-top" expand="lg" variant="dark">
             <Navbar.Brand>
                 <img
                     src={Logo}
