@@ -29,7 +29,16 @@ If you are using _yarn_:
 
 ## Usage
 
-Open [http://localhost:3000](http://localhost:3000) to view this application in the browser.
+To make this app work, you have to obtain an [EDAMAM](https://www.edamam.com/) API key and API ID, then create a folder called _secret_ inside _src_ and inside _secret_, create a secret.js file.
+
+_src/secret/secret.js_:
+
+```javascript
+export const edamamAppId = 'here-your-edamam-api-id';
+export const edamamAppKey = 'here-your-edamam-api-key';
+```
+
+After this initial setup, run the application and open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
